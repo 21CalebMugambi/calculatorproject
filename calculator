@@ -1,17 +1,32 @@
-number1=eval(inpu("enter first number:"))
-number2=eval(inpu("enter second number:"))
+number1=eval(input("enter first number:"))
+number2=eval(input("enter second number:"))
 operator=input("enter operator:")
 def add(num1, num2):
     result=num1=num2
-    return result 
+    print( result) 
 def subtract(num1,num2):
     result=num1-num2
-    return result
+    print (result)
 
 def divide(num1,num2):
     result=num1/num2
-    return result
-
+    print(result)
 def multiply(num1,num2):
     result=num1*num2
-    return result
+    print (result)
+
+if operator=="+":
+    add(number1,number2)
+    print(add)
+elif operator=="-":
+    subtract(number1,number2)
+    print(subtract)
+elif operator=="/" :
+    divide(number1,number2)
+    print(divide)
+elif operator=="x": 
+    multiply(number1,number2)
+    print(multiply)
+else:
+    print("Invalid password")
+       
